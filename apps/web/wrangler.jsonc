@@ -18,7 +18,7 @@
     "HYDRA_TENANT_ID": "myndmemory_demo",
     "HYDRA_SHARED_SUB_TENANT_ID": "demo_shared",
     "MYND_MEMORY_DEMO_USER_ID": "demo_user",
-    "MYND_MEMORY_INFERENCE_PROVIDER": "aiGateway",
+    "MYND_MEMORY_INFERENCE_PROVIDER": "nebius",
     "MYND_MEMORY_GATEWAY_MODEL": "openai/gpt-5.5",
     "MYND_MEMORY_OPENAI_MODEL": "gpt-5-mini",
     "MYND_MEMORY_GEMINI_MODEL": "gemini-3-flash",
