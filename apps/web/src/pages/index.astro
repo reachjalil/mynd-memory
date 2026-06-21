@@ -1,0 +1,41 @@
+---
+import { MemoryControlRoom } from "../components/MemoryControlRoom";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MyndMemory is a persistent agent-memory product demo where AI memory can be captured, connected, tuned, queried, and recalled."
+    />
+    <meta
+      name="theme-color"
+      content="#020817"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://myndmemory.com" />
+    <meta property="og:title" content="MyndMemory - Memory is a living system" />
+    <meta
+      property="og:description"
+      content="A branded live product demo for persistent, inspectable AI agent memory backed by local simulation, HydraDB recall, and Nebius inference."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="MyndMemory - Memory is a living system"
+    />
+    <meta
+      name="twitter:description"
+      content="Persistent, inspectable AI agent memory: capture, connect, tune, persist to HydraDB, and recall with Nebius-grounded answers."
+    />
+    <title>MyndMemory - Memory is a living system</title>
+  </head>
+  <body>
+    <MemoryControlRoom client:load />
+  </body>
+</html>

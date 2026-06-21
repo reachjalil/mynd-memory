@@ -1,0 +1,32 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalogs:
+  default:
+    "@astrojs/check": ^0.9.8
+    "@astrojs/cloudflare": ^13.7.0
+    "@astrojs/react": ^5.0.7
+    "@ai-sdk/gateway": ^3.0.133
+    "@ai-sdk/google": ^3.0.83
+    "@ai-sdk/openai": ^3.0.73
+    "@biomejs/biome": ^2.4.8
+    "@cloudflare/workers-types": ^4.20260621.1
+    "@hydradb/sdk": ^2.0.1
+    "@tailwindcss/vite": ^4.3.1
+    "@types/node": ^25.5.0
+    "@types/react": ^19.2.14
+    "@types/react-dom": ^19.2.3
+    ai: ^6.0.208
+    astro: ^6.4.8
+    lucide-react: ^1.21.0
+    react: ^19.2.7
+    react-dom: ^19.2.7
+    recharts: ^3.8.1
+    tailwindcss: ^4.3.1
+    turbo: ^2.9.6
+    tsx: ^4.22.4
+    typescript: ^5.9.3
+    vite: ^8.0.16
+    vitest: ^4.1.9
+    wrangler: ^4.103.0

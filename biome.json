@@ -1,0 +1,69 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "root": true,
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/.astro",
+      "!**/.astro",
+      "!**/dist",
+      "!**/build",
+      "!**/.turbo",
+      "!**/.vite",
+      "!**/.wrangler",
+      "!**/.wrangler",
+      "!**/coverage",
+      "!**/__pycache__"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "includes": [
+      "*.{js,jsx,ts,tsx,mts,cts,cjs,mjs,json,jsonc,md,mdx,css}",
+      "**/*.{js,jsx,ts,tsx,mts,cts,cjs,mjs,json,jsonc,md,mdx,css}"
+    ],
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "es5",
+      "semicolons": "always"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "includes": [
+      "*.{js,jsx,ts,tsx,mts,cts,cjs,mjs,json,jsonc,css}",
+      "**/*.{js,jsx,ts,tsx,mts,cts,cjs,mjs,json,jsonc,css}"
+    ],
+    "rules": {
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "warn",
+        "useHookAtTopLevel": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useConst": "error",
+        "useTemplate": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn"
+      }
+    }
+  },
+  "assist": {
+    "enabled": false,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

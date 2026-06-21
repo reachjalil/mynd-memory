@@ -1,0 +1,39 @@
+{
+  "name": "mynd-memory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "check": "turbo run check",
+    "check:fast": "turbo run check:fast",
+    "web:dev": "pnpm --filter @mynd-memory/web run dev",
+    "web:build": "pnpm --filter @mynd-memory/web run build",
+    "web:check": "pnpm --filter @mynd-memory/web run check",
+    "hydra:seed": "pnpm --filter @mynd-memory/hydradb run seed",
+    "hydra:check": "pnpm --filter @mynd-memory/hydradb run check",
+    "harness:validate": "npx harnessc validate",
+    "harness:preview": "npx harnessc activate",
+    "harness:activate": "npx harnessc activate --yes",
+    "setup:harness": "pnpm harness:validate && pnpm harness:activate",
+    "lint": "pnpm biome:check",
+    "lint:fix": "pnpm biome:fix",
+    "format": "pnpm biome:format",
+    "biome:check": "biome check --assist-enabled=false .",
+    "biome:fix": "biome format --write . && biome lint --write .",
+    "biome:format": "biome format --write .",
+    "biome:imports": "biome check --write --assist-enabled=true --only=assist/source/organizeImports .",
+    "types": "pnpm -r --if-present run types"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "tsx": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://v2-9-6.turborepo.dev/schema.json",
+  "tasks": {
+    "check": {
+      "dependsOn": ["^check"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.d.ts",
+        "tsconfig.json"
+      ],
+      "outputs": [],
+      "outputLogs": "new-only"
+    },
+    "check:fast": {
+      "dependsOn": [],
+      "inputs": ["src/**/*.ts", "src/**/*.tsx", "tsconfig.json"],
+      "outputs": [],
+      "outputLogs": "new-only"
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+node_modules/
+dist/
+build/
+.turbo/
+.vite/
+.astro/
+.wrangler/
+coverage/
+artifacts/
+
+# Harness-generated agent surfaces and root instruction outputs.
+/.agents/
+/.claude/
+/AGENTS.md
+/CLAUDE.md
+
+# Harness source must remain tracked.
+!/.harness/
+!/.harness/**
+
+__pycache__/
+*.py[cod]
+
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+.dev.vars
+apps/**/.dev.vars

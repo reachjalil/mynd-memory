@@ -1,0 +1,43 @@
+{
+  "name": "@mynd-memory/web",
+  "version": "0.1.0",
+  "description": "Astro and Cloudflare demo app for the MyndMemory hackathon control room.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy",
+    "deploy:dry-run": "astro build && wrangler deploy --dry-run",
+    "types": "astro sync && wrangler types worker-configuration.generated.d.ts --env-interface MyndMemoryGeneratedEnv",
+    "check": "astro check",
+    "check:fast": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "catalog:",
+    "@astrojs/cloudflare": "catalog:",
+    "@astrojs/react": "catalog:",
+    "@ai-sdk/gateway": "catalog:",
+    "@ai-sdk/google": "catalog:",
+    "@ai-sdk/openai": "catalog:",
+    "@mynd-memory/hydradb": "workspace:*",
+    "@mynd-memory/inference": "workspace:*",
+    "@mynd-memory/memory-core": "workspace:*",
+    "@tailwindcss/vite": "catalog:",
+    "ai": "catalog:",
+    "astro": "catalog:",
+    "lucide-react": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "recharts": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "wrangler": "catalog:"
+  }
+}

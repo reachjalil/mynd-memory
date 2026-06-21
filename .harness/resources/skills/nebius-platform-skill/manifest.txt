@@ -1,0 +1,10 @@
+SKILL.md
+reference/00-overview.md
+reference/10-request-routing.md
+reference/20-auth-and-resource-model.md
+reference/30-infrastructure-workflows.md
+reference/40-ai-workloads.md
+reference/50-security-observability-cost.md
+reference/60-troubleshooting.md
+reference/70-response-patterns.md
+reference/90-official-sources.md
