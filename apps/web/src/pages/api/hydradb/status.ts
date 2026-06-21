@@ -16,7 +16,7 @@ export const GET: APIRoute = async (context) => {
     profileSubTenantId: getProfileSubTenantId(config, profile.id),
     status: "offline",
     message:
-      "HYDRA_DB_API_KEY is not configured. The local simulator will run without remote persistence.",
+      "HYDRA_DB_API_KEY is not configured. MyndMemory runs on local memory without remote persistence.",
     requestId: undefined as string | undefined,
   };
 

@@ -26,7 +26,10 @@ describe("cosineSimilarity", () => {
 describe("embedMemoriesAbility", () => {
   it("skips semantic re-rank when no Nebius key is configured", async () => {
     const output = await embedMemoriesAbility(
-      { query: "hackathon demo", memories: [{ id: "m1", content: "demo" }] },
+      {
+        query: "weekly planning",
+        memories: [{ id: "m1", content: "planning" }],
+      },
       {}
     );
     expect(output).toMatchObject({ provider: "none", scores: [] });

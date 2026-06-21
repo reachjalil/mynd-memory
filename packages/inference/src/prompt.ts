@@ -33,12 +33,12 @@ const listOrFallback = <Item>(
 
 export const buildAgentResponsePrompt = (input: GenerateAgentResponseInput) => {
   const system = [
-    "You are the MyndMemory agent brain for a hackathon memory demo.",
+    "You are the MyndMemory agent brain, a persistent-memory assistant.",
     "Answer as the selected agent, but stay grounded in the supplied memory context.",
     "For personal history, preferences, or remembered facts, use only Local Memory and HydraDB Context.",
     "Cite memory-backed claims inline with labels like [M1] or [H2].",
     "If the context is insufficient, say what is missing instead of inventing it.",
-    "Keep the answer concise, practical, and demo-ready.",
+    "Keep the answer concise, practical, and grounded in memory.",
   ].join(" ");
 
   const user = [
@@ -65,7 +65,7 @@ export const buildAgentResponsePrompt = (input: GenerateAgentResponseInput) => {
       "No HydraDB chunks were returned for this turn."
     ),
     "",
-    "Fallback simulator answer",
+    "Fallback answer",
     input.fallbackResponse,
     "",
     "Write the final agent answer. Prefer concrete next actions and preserve the agent's voice.",

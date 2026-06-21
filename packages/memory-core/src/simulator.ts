@@ -127,7 +127,7 @@ export const createSimulatorStateFromProfile = (
       event(
         "agent_created",
         `${profile.name} loaded`,
-        `${profile.seedMemories.length} seeded memories loaded into the simulator.`,
+        `${profile.seedMemories.length} seeded memories loaded into the memory runtime.`,
         createdAt
       ),
     ],
@@ -144,60 +144,180 @@ export const createSimulatorState = (
 
 const classifyTheme = (content: string): string => {
   const text = content.toLowerCase();
-  if (/(hackathon|judge|demo|mvp|presentation)/.test(text)) {
-    return "hackathon-demo";
-  }
   if (
-    /(dashboard|visual|watch|live|real-time|internal|transparent|hide)/.test(
+    /\b(prefer|like|love|hate|rather|favou?rite|style|tone|format|concise)\b/.test(
       text
     )
   ) {
-    return "transparency";
+    return "preferences";
   }
-  if (/(concise|short|detailed|tone|answer|explain)/.test(text)) {
-    return "answer-style";
+  if (
+    /\b(goal|objective|target|aim|launch|ship|roadmap|deadline|quarter|close the)\b/.test(
+      text
+    )
+  ) {
+    return "goals";
   }
-  if (/(frustrated|excited|worried|cautious|overloaded|mood)/.test(text)) {
-    return "emotion";
+  if (
+    /\b(task|to-?do|follow ?up|next step|remind|by (mon|tue|wed|thu|fri|sat|sun|tomorrow|next week|end of))\b/.test(
+      text
+    )
+  ) {
+    return "tasks";
   }
-  if (/(build|ship|task|focus|priority|practical)/.test(text)) {
-    return "execution-style";
+  if (
+    /\b(decided|decision|chose|choosing|standardi[sz]e|agreed|go with|we will)\b/.test(
+      text
+    )
+  ) {
+    return "decisions";
+  }
+  if (
+    /\b(frustrated|annoyed|angry|worried|anxious|stressed|excited|happy|relieved|overwhelmed)\b/.test(
+      text
+    )
+  ) {
+    return "wellbeing";
+  }
+  if (
+    /\b(manager|team|customer|client|contact|stakeholder|colleague|partner|reports to|champion|buyer)\b/.test(
+      text
+    )
+  ) {
+    return "relationships";
+  }
+  if (
+    /\b(schedule|time ?zone|calendar|meeting|morning|afternoon|availability|deep work)\b/.test(
+      text
+    )
+  ) {
+    return "schedule";
+  }
+  if (
+    /\b(api|code|service|architecture|config|deploy|database|workaround|learned|fix|bug|endpoint)\b/.test(
+      text
+    )
+  ) {
+    return "knowledge";
   }
   return "general";
 };
 
 const classifyType = (content: string): MemoryType => {
   const text = content.toLowerCase();
-  if (/(prefer|like|want|hate|need)/.test(text)) return "user_preference";
-  if (/(focus|goal|priority|hackathon|demo)/.test(text)) return "goal";
-  if (/(frustrated|excited|worried|overloaded|cautious)/.test(text)) {
+  if (/\b(prefer|like|love|hate|rather|favou?rite|enjoy)\b/.test(text)) {
+    return "user_preference";
+  }
+  if (
+    /\b(decided|decision|chose|choosing|standardi[sz]e|agreed|go with)\b/.test(
+      text
+    )
+  ) {
+    return "decision";
+  }
+  if (
+    /\b(goal|objective|target|aim to|want to|plan to|trying to|hoping to|close the)\b/.test(
+      text
+    )
+  ) {
+    return "goal";
+  }
+  if (
+    /\b(task|to-?do|follow ?up|next step|need to|remind me|by (mon|tue|wed|thu|fri|tomorrow|next week))\b/.test(
+      text
+    )
+  ) {
+    return "task";
+  }
+  if (
+    /\b(frustrated|annoyed|angry|worried|anxious|stressed|excited|happy|relieved|overwhelmed)\b/.test(
+      text
+    )
+  ) {
     return "emotional_signal";
   }
-  if (/(decided|decision|choose|chosen)/.test(text)) return "decision";
-  if (/(task|todo|next)/.test(text)) return "task";
+  if (
+    /\b(learned|figured out|turns out|workaround|the fix|the trick|realized)\b/.test(
+      text
+    )
+  ) {
+    return "skill_or_learning";
+  }
+  if (
+    /\b(my (manager|team|boss|report)|reports to|colleague|customer|client|contact|stakeholder|champion|buyer)\b/.test(
+      text
+    )
+  ) {
+    return "relationship_context";
+  }
+  if (
+    /\b(i am|i'm|my name|i work|i live|i use|we use|our team|on the)\b/.test(
+      text
+    )
+  ) {
+    return "user_fact";
+  }
   return "conversation_episode";
 };
 
 const baseImportance = (
   content: string,
+  type: MemoryType,
   parameters: BrainParameters
 ): number => {
   const text = content.toLowerCase();
-  let score = 0.42;
-  if (/(prefer|need|want|remember)/.test(text)) score += 0.2;
-  if (/(hackathon|demo|judge|ship|focus|priority)/.test(text)) score += 0.18;
-  if (/(always|never|important|critical)/.test(text)) score += 0.14;
-  if (/(frustrated|excited|worried|overloaded)/.test(text)) {
-    score += 0.12 * parameters.emotionalSensitivity;
+  let score = 0.4;
+  // Cognitive category weighting: durable kinds matter more.
+  if (type === "goal") score += 0.2;
+  if (type === "user_preference" || type === "decision") score += 0.18;
+  if (type === "user_fact" || type === "relationship_context") score += 0.14;
+  if (type === "skill_or_learning" || type === "repeated_pattern") {
+    score += 0.12;
   }
+  // Explicit salience markers.
+  if (
+    /\b(always|never|important|critical|must|key|prefer|remember|note that)\b/.test(
+      text
+    )
+  ) {
+    score += 0.12;
+  }
+  // Emotional content scaled by the agent's emotional sensitivity.
+  if (
+    /\b(frustrated|annoyed|angry|worried|anxious|stressed|excited|happy|relieved|overwhelmed)\b/.test(
+      text
+    )
+  ) {
+    score += 0.16 * parameters.emotionalSensitivity;
+  }
+  // Curious agents assign a little more value to marginal detail.
+  score += parameters.exploration * 0.08;
   return clamp01(score);
 };
 
 const emotionalWeight = (content: string): number => {
   const text = content.toLowerCase();
-  if (/(frustrated|angry|worried|overloaded)/.test(text)) return 0.82;
-  if (/(excited|love|great|energized)/.test(text)) return 0.72;
-  if (/(cautious|careful|risk|constraint)/.test(text)) return 0.62;
+  if (
+    /\b(frustrated|annoyed|angry|furious|worried|anxious|stressed|overwhelmed)\b/.test(
+      text
+    )
+  ) {
+    return 0.82;
+  }
+  if (
+    /\b(excited|love|thrilled|delighted|great|energized|happy|relieved)\b/.test(
+      text
+    )
+  ) {
+    return 0.72;
+  }
+  if (
+    /\b(cautious|careful|nervous|risk|constraint|concerned|hesitant)\b/.test(
+      text
+    )
+  ) {
+    return 0.62;
+  }
   return 0.24;
 };
 
@@ -309,15 +429,29 @@ const createObservedMemories = (
   state: SimulatorState,
   userMessage: string
 ): AgentMemory[] => {
-  const importance = baseImportance(userMessage, state.parameters);
+  const type = classifyType(userMessage);
+  const importance = baseImportance(userMessage, type, state.parameters);
+  const emotional = emotionalWeight(userMessage);
+
+  // Storage is driven entirely by the agent's configuration: its importance
+  // threshold (loosened slightly for exploratory agents) plus an emotional
+  // override scaled by how emotionally sensitive the agent is.
+  const explorationAllowance = state.parameters.exploration * 0.12;
+  const emotionalOverride =
+    emotional * state.parameters.emotionalSensitivity >= 0.5;
   const shouldStore =
-    importance >= state.parameters.importanceThreshold ||
-    /(prefer|remember|want|need|frustrated|hackathon|demo)/i.test(userMessage);
+    importance >= state.parameters.importanceThreshold - explorationAllowance ||
+    emotionalOverride;
   if (!shouldStore) return [];
 
   const theme = classifyTheme(userMessage);
-  const type = classifyType(userMessage);
   const idBase = `${state.profile.id}_${theme}_${state.memories.length + 1}`;
+  // Durable agents (aggressive consolidation) hold new memories longer;
+  // episodic chatter fades faster.
+  const decayRate = clamp01(
+    (type === "conversation_episode" ? 0.2 : 0.1) *
+      (1.25 - state.parameters.consolidationAggressiveness * 0.5)
+  );
   const primary: AgentMemory = {
     id: slug(idBase),
     agentId: state.profile.id,
@@ -328,18 +462,22 @@ const createObservedMemories = (
     simulatedTime: state.simulatedNow,
     lastAccessedAt: state.simulatedNow,
     importance,
-    emotionalWeight: emotionalWeight(userMessage),
+    emotionalWeight: emotional,
     confidence: type === "conversation_episode" ? 0.68 : 0.82,
     theme,
     relatedMemoryIds: state.memories
       .filter((memory) => memory.theme === theme)
       .slice(0, 3)
       .map((memory) => memory.id),
-    decayRate: type === "conversation_episode" ? 0.22 : 0.1,
+    decayRate,
     accessCount: 0,
     state: "short_term",
-    explanation:
-      "Captured from the live chat because salience, preference, goal, or emotional language crossed the memory threshold.",
+    explanation: `Captured as a ${type.replaceAll(
+      "_",
+      " "
+    )} because it crossed this agent's importance threshold (${state.parameters.importanceThreshold.toFixed(
+      2
+    )}).`,
   };
   return [primary];
 };
@@ -351,44 +489,21 @@ const responseFor = (
 ): string => {
   if (retrieved.length === 0) {
     return [
-      "I would focus on a tight before-and-after story: ask the agent the same question with no history, then switch to a memory-rich profile and show the answer change.",
-      "Keep the build centered on a visible dashboard: retrieved memories, new memories, state changes, and a time/consolidation control.",
-      "Because I do not have much stored context yet, this is useful but generic advice.",
+      "I do not have stored context about this yet, so here is a general starting point.",
+      "Tell me your preferences, goals, or constraints and I will remember them for next time.",
     ].join("\n\n");
   }
 
   const themes = Array.from(new Set(retrieved.map((memory) => memory.theme)));
-  const concise = retrieved.some((memory) =>
-    /concise|short|practical|mvp/i.test(memory.content)
-  );
-  const dashboard = retrieved.some((memory) =>
-    /dashboard|visual|real-time|transparent|internal/i.test(memory.content)
-  );
-  const hackathon = retrieved.some((memory) =>
-    /hackathon|judge|demo/i.test(memory.content)
-  );
-  const hiddenTools = retrieved.some((memory) =>
-    /hide|hidden|frustrated|explainability/i.test(memory.content)
-  );
+  const lines = retrieved.slice(0, 3).map((memory) => `- ${memory.content}`);
 
-  const lines = [
-    concise
-      ? "Focus on the shortest convincing proof, not a broad research tour."
-      : "Focus on a clear proof that memory changes the agent's behavior.",
-    hackathon
-      ? "Run the judge path live: Brand-New Agent, same question, One-Month Agent, then point to the recalled memories."
-      : "Use one repeatable question so the contrast is easy to see.",
-    dashboard
-      ? "Keep the memory dashboard on screen while chatting so the internal process is visible in real time."
-      : "Show the retrieved context next to the answer so the audience can audit it.",
-    hiddenTools
-      ? "Do not hide the mechanism: label which memories were used, ignored, reinforced, or consolidated."
-      : "Add a concise explanation for every important memory action.",
-  ];
-
-  return `${lines.join(" ")}\n\nI am weighting ${themes.join(
-    ", "
-  )} because those themes are already established in this agent's memory.`;
+  return [
+    "Based on what I remember about you:",
+    lines.join("\n"),
+    `I am weighting ${themes.join(
+      ", "
+    )} because those are already established in this agent's memory.`,
+  ].join("\n\n");
 };
 
 export const runAgentTurn = (
@@ -637,29 +752,45 @@ export const runConsolidationCycle = (
   };
 };
 
+const humanizeParameter = (key: string): string => {
+  const spaced = key.replace(/([a-z0-9])([A-Z])/g, "$1 $2").toLowerCase();
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+};
+
 export const updateBrainParameter = (
   current: SimulatorState,
   key: keyof BrainParameters,
   value: number
-): SimulatorState => ({
-  ...current,
-  parameters: {
-    ...current.parameters,
-    [key]:
-      key === "shortTermCapacity"
-        ? Math.round(value)
-        : Number(value.toFixed(2)),
-  },
-  events: [
-    event(
-      "parameter_changed",
-      `Changed ${key}`,
-      `${key} is now ${value}. Future recall and storage decisions will use the new value.`,
-      current.simulatedNow
-    ),
-    ...current.events,
-  ].slice(0, 80),
-});
+): SimulatorState => {
+  const nextValue =
+    key === "shortTermCapacity" ? Math.round(value) : Number(value.toFixed(2));
+  const display =
+    key === "shortTermCapacity" ? String(nextValue) : nextValue.toFixed(2);
+  const label = humanizeParameter(key);
+  // A slider drag emits one update per integer/step, so a single gesture used
+  // to stack dozens of near-identical entries — and because the event id was
+  // built from simulatedNow + a truncated detail slug, every edit to the same
+  // parameter collided on its React key. Give the entry a stable id per
+  // (simulated time, parameter) and drop any prior copy before prepending, so
+  // consecutive edits coalesce into one fresh entry instead of flooding the log.
+  const id = `${current.simulatedNow}-parameter_changed-${key}`;
+  const changeEvent: MemoryEvent = {
+    id,
+    kind: "parameter_changed",
+    title: `Tuned ${label}`,
+    detail: `${label} is now ${display}. Future recall and storage decisions will use the new value.`,
+    createdAt: current.simulatedNow,
+  };
+  const events = [
+    changeEvent,
+    ...current.events.filter((item) => item.id !== id),
+  ].slice(0, 80);
+  return {
+    ...current,
+    parameters: { ...current.parameters, [key]: nextValue },
+    events,
+  };
+};
 
 export const createCustomAgentProfile = (
   input: AgentDraftInput,
@@ -667,7 +798,7 @@ export const createCustomAgentProfile = (
 ): AgentProfile => ({
   id: `custom_${slug(input.name || "agent")}_${createdAt.slice(11, 19).replace(/:/g, "")}`,
   name: input.name || "Custom Agent",
-  description: input.description || "A custom demo agent profile.",
+  description: input.description || "A custom agent profile.",
   memoryAge: input.memoryAge || "Freshly configured",
   personality: input.personality || "Configurable and transparent.",
   operatingStyle:

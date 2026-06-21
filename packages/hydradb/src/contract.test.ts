@@ -30,7 +30,7 @@ describe("HydraDB v2 request contract", () => {
   it("keeps profile writes and reads in the same sub-tenant", () => {
     const profile = getAgentProfile("one-month");
     const form = buildMemoriesForm(config, profile);
-    const query = buildQueryRequest(config, profile, "hackathon demo");
+    const query = buildQueryRequest(config, profile, "weekly status update");
 
     expect(form.get("sub_tenant_id")).toBe(
       getProfileSubTenantId(config, profile.id)

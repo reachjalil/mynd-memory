@@ -1,0 +1,382 @@
+{"kind":"deck","id":"pr/7ec2jz","name":"Deck"}
+{"kind":"layout","layoutId":"c843b73d-cb38-4cf0-b6c3-57337db50140","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"d9ea4b5a-60e4-4442-becd-d932651134f8","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ygv0ck","slide":1,"title":"MyndMemory","textShapes":5}
+{"kind":"shape","id":"sh/a9w3m94f","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":1,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":1,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/z61032ls","slide":1,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/al87ed8b","slide":1,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":1,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/orytsvu9","slide":1,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":1,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":1,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":1,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/1gvy90je","slide":1,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":1,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/je9cvixc","slide":1,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/87ed8bat","slide":1,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/xs72x4na","slide":1,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/q1orytsv","slide":1,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":1,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":1,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":1,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/hgn29gr2","slide":1,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/svu9knih","slide":1,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/za1gvy90","slide":1,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":1,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":1,"bbox":[0,0,640,720]}
+{"kind":"shape","id":"sh/zidonyd0","slide":1,"bbox":[72,58,12,12]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":1,"bbox":[91,58,12,12]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":1,"bbox":[110,58,12,12]}
+{"kind":"shape","id":"sh/s72x4nap","slide":1,"bbox":[72,77,12,12]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":1,"bbox":[91,77,12,12]}
+{"kind":"shape","id":"sh/vu9knih4","slide":1,"bbox":[110,77,12,12]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":1,"bbox":[72,96,12,12]}
+{"kind":"shape","id":"sh/d0z61032","slide":1,"bbox":[91,96,12,12]}
+{"kind":"shape","id":"sh/2lszqtcj","slide":1,"bbox":[110,96,12,12]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":1,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,55,220,28]}
+{"kind":"textbox","id":"sh/knih4byh","slide":1,"text":"MEMORY PROMPTING FRAMEWORK","textPreview":"MEMORY PROMPTING FRAMEWORK","textChars":26,"textLines":1,"bbox":[72,156,450,28]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":1,"text":"Build agents that remember, learn, and evolve.","textPreview":"Build agents that remember, learn, and evolve.","textChars":46,"textLines":1,"bbox":[72,214,560,230]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":1,"text":"MyndMemory gives builders a framework and Studio console for configuring human-like memory on top of HydraDB.","textPreview":"MyndMemory gives builders a framework and Studio console for configuring human-like memory on top of HydraDB.","textChars":109,"textLines":1,"bbox":[74,474,520,78]}
+{"kind":"textbox","id":"sh/val87ed8","slide":1,"text":"Pitch deck • 2026","textPreview":"Pitch deck • 2026","textChars":17,"textLines":1,"bbox":[74,634,220,24]}
+{"kind":"image","id":"im/a1gvy90j","slide":1,"name":"","alt":"MyndMemory grid thumbnail","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/ygv0ck","slide":1,"text":""}
+{"kind":"slide","id":"sl/8vuo2e","slide":2,"title":"MyndMemory","textShapes":12}
+{"kind":"shape","id":"sh/nap4r65w","slide":2,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/cvixczed","slide":2,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":2,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/udg7adsj","slide":2,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/nyd0z610","slide":2,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/cj6tovah","slide":2,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/54zidony","slide":2,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/u9knih4b","slide":2,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/judg7ads","slide":2,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/nyd0z610","slide":2,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/udg7adsj","slide":2,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/54zidony","slide":2,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/cj6tovah","slide":2,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/nap4r65w","slide":2,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":2,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":2,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/cvixczed","slide":2,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":2,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":2,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":2,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":2,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":2,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":2,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/2t83itgf","slide":2,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":2,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":2,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/9knih4by","slide":2,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":2,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":2,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/xs72x4na","slide":2,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/87ed8bat","slide":2,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":2,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":2,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":2,"text":"THE PROBLEM","textPreview":"THE PROBLEM","textChars":11,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":2,"text":"AI apps forget too much context.","textPreview":"AI apps forget too much context.","textChars":32,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":2,"text":"Agents can chat, but most products still treat memory as logs, prompts, or fragile retrieval glue.","textPreview":"Agents can chat, but most products still treat memory as logs, prompts, or fragile retrieval glue.","textChars":98,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":2,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/8v6psfil","slide":2,"bbox":[720,189,15,15]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":2,"text":"Context is scattered","textPreview":"Context is scattered","textChars":20,"textLines":1,"bbox":[756,180,420,30]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":2,"text":"Important user state lives across events, documents, conversations, and app data.","textPreview":"Important user state lives across events, documents, conversations, and app data.","textChars":81,"textLines":1,"bbox":[756,214,420,42]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":2,"bbox":[720,267,15,15]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":2,"text":"Retrieval is not memory","textPreview":"Retrieval is not memory","textChars":23,"textLines":1,"bbox":[756,258,420,30]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":2,"text":"Search can return facts, but it does not decide what should be learned, updated, or forgotten.","textPreview":"Search can return facts, but it does not decide what should be learned, updated, or forgotten.","textChars":94,"textLines":1,"bbox":[756,292,420,42]}
+{"kind":"shape","id":"sh/lwval87e","slide":2,"bbox":[720,345,15,15]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":2,"text":"Builders lack a control plane","textPreview":"Builders lack a control plane","textChars":29,"textLines":1,"bbox":[756,336,420,30]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":2,"text":"Teams need a way to inspect and tune how agents remember across real workflows.","textPreview":"Teams need a way to inspect and tune how agents remember across real workflows.","textChars":79,"textLines":1,"bbox":[756,370,420,42]}
+{"kind":"notes","id":"nt/8vuo2e","slide":2,"text":""}
+{"kind":"slide","id":"sl/d93kis","slide":3,"title":"MyndMemory","textShapes":10}
+{"kind":"shape","id":"sh/lszqtcj6","slide":3,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":3,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/3m94fu18","slide":3,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/sji5snel","slide":3,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":3,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/adsji5sn","slide":3,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":3,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/svu9knih","slide":3,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/hgn29gr2","slide":3,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":3,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":3,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/bat47y1k","slide":3,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":3,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":3,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/47y1kre1","slide":3,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/bm58z25k","slide":3,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":3,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/twra5gbq","slide":3,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/4byhgn29","slide":3,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/0je9cvix","slide":3,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/t47y1kre","slide":3,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/idonyd0z","slide":3,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/byhgn29g","slide":3,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/0rqd4vmt","slide":3,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/tcj6tova","slide":3,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":3,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":3,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/032lszqt","slide":3,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/tovahoza","slide":3,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/z61032ls","slide":3,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/al87ed8b","slide":3,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":3,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":3,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":3,"text":"THE PRODUCT","textPreview":"THE PRODUCT","textChars":11,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":3,"text":"The framework layer for adaptive agent memory.","textPreview":"The framework layer for adaptive agent memory.","textChars":46,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":3,"text":"It turns app events into scored, durable, inspectable memory prompts that agents can use in future reasoning.","textPreview":"It turns app events into scored, durable, inspectable memory prompts that agents can use in future reasoning.","textChars":109,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":3,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/65wjudg7","slide":3,"bbox":[720,166,410,72]}
+{"kind":"shape","id":"sh/q1orytsv","slide":3,"bbox":[720,274,410,72]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":3,"bbox":[720,382,410,72]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":3,"text":"Application events","textPreview":"Application events","textChars":18,"textLines":1,"bbox":[748,186,360,28]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":3,"text":"MyndMemory runtime","textPreview":"MyndMemory runtime","textChars":18,"textLines":1,"bbox":[748,294,360,28]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":3,"text":"Agent response","textPreview":"Agent response","textChars":14,"textLines":1,"bbox":[748,402,360,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":3,"text":"Capture → score → persist → retrieve → assemble context","textPreview":"Capture → score → persist → retrieve → assemble context","textChars":55,"textLines":1,"bbox":[724,512,430,66]}
+{"kind":"notes","id":"nt/d93kis","slide":3,"text":""}
+{"kind":"slide","id":"sl/u1emak","slide":4,"title":"MyndMemory","textShapes":12}
+{"kind":"shape","id":"sh/ixczed8v","slide":4,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/tovahoza","slide":4,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/032lszqt","slide":4,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/bulwval8","slide":4,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":4,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":4,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/0fepkzup","slide":4,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/byhgn29g","slide":4,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/idonyd0z","slide":4,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/c7u54zid","slide":4,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/1orytsvu","slide":4,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":4,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":4,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":4,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/1032lszq","slide":4,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/u9knih4b","slide":4,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/judg7ads","slide":4,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/cj6tovah","slide":4,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/54zidony","slide":4,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":4,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/g7adsji5","slide":4,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":4,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":4,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/90je9cvi","slide":4,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":4,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":4,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/yd0z6103","slide":4,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/9cvixcze","slide":4,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":4,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":4,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/3m94fu18","slide":4,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/s72x4nap","slide":4,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":4,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":4,"text":"ARCHITECTURE","textPreview":"ARCHITECTURE","textChars":12,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":4,"text":"HydraDB is the substrate. MyndMemory is the behavior.","textPreview":"HydraDB is the substrate. MyndMemory is the behavior.","textChars":53,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/sji5snel","slide":4,"text":"The system separates durable storage from memory policy, lifecycle, scoring, and human-readable inspection.","textPreview":"The system separates durable storage from memory policy, lifecycle, scoring, and human-readable inspection.","textChars":107,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":4,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/za1gvy90","slide":4,"bbox":[640,178,170,310]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":4,"text":"Framework","textPreview":"Framework","textChars":9,"textLines":1,"bbox":[654,206,142,72]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":4,"text":"Runtime policies, memory lifecycle, context assembly, and Studio controls.","textPreview":"Runtime policies, memory lifecycle, context assembly, and Studio controls.","textChars":74,"textLines":1,"bbox":[654,296,142,160]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":4,"bbox":[824,178,170,310]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":4,"text":"HydraDB","textPreview":"HydraDB","textChars":7,"textLines":1,"bbox":[838,206,142,72]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":4,"text":"Durable persistence, hybrid retrieval, metadata, and memory state history.","textPreview":"Durable persistence, hybrid retrieval, metadata, and memory state history.","textChars":74,"textLines":1,"bbox":[838,296,142,160]}
+{"kind":"shape","id":"sh/at47y1kr","slide":4,"bbox":[1008,178,170,310]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":4,"text":"Nebius Token Factory","textPreview":"Nebius Token Factory","textChars":20,"textLines":1,"bbox":[1022,206,142,72]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":4,"text":"Inference, semantic scoring, summarization, and recall assistance.","textPreview":"Inference, semantic scoring, summarization, and recall assistance.","textChars":66,"textLines":1,"bbox":[1022,296,142,160]}
+{"kind":"notes","id":"nt/u1emak","slide":4,"text":""}
+{"kind":"slide","id":"sl/ph3ik3","slide":5,"title":"MyndMemory","textShapes":10}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":5,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/72x4nap4","slide":5,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":5,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":5,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/0z61032l","slide":5,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":5,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":5,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":5,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":5,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":5,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":5,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/c7u54zid","slide":5,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/1orytsvu","slide":5,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/u9knih4b","slide":5,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/judg7ads","slide":5,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":5,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/1032lszq","slide":5,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/udg7adsj","slide":5,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/nyd0z610","slide":5,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":5,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/m94fu18j","slide":5,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/x0nuxc3y","slide":5,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":5,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":5,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":5,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/xobm58z2","slide":5,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/83itgfml","slide":5,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/fepkzupw","slide":5,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":5,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":5,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":5,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":5,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":5,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/0z61032l","slide":5,"text":"MEMORY STUDIO","textPreview":"MEMORY STUDIO","textChars":13,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":5,"text":"A dedicated console for configuring agent memory.","textPreview":"A dedicated console for configuring agent memory.","textChars":49,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":5,"text":"Studio gives builders a visible interface for inspecting memory states, tuning policies, and reviewing why context was recalled.","textPreview":"Studio gives builders a visible interface for inspecting memory states, tuning policies, and reviewing why context was recalled.","textChars":128,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":5,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/pwb2hwfy","slide":5,"bbox":[690,145,470,360]}
+{"kind":"shape","id":"sh/lwval87e","slide":5,"bbox":[718,178,160,260]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":5,"bbox":[900,178,226,76]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":5,"bbox":[900,276,226,76]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":5,"bbox":[900,374,226,76]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":5,"text":"Agent profile","textPreview":"Agent profile","textChars":13,"textLines":1,"bbox":[740,204,120,24]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":5,"text":"Memory states","textPreview":"Memory states","textChars":13,"textLines":1,"bbox":[920,200,160,24]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":5,"text":"Policy tuning","textPreview":"Policy tuning","textChars":13,"textLines":1,"bbox":[920,298,160,24]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":5,"text":"Recall trace","textPreview":"Recall trace","textChars":12,"textLines":1,"bbox":[920,396,160,24]}
+{"kind":"notes","id":"nt/ph3ik3","slide":5,"text":""}
+{"kind":"slide","id":"sl/4kchnz","slide":6,"title":"MyndMemory","textShapes":14}
+{"kind":"shape","id":"sh/w3m94fu1","slide":6,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":6,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":6,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/lwval87e","slide":6,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":6,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":6,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":6,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":6,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/sneloj2t","slide":6,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":6,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/fyxobm58","slide":6,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":6,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":6,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":6,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":6,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/8v6psfil","slide":6,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/xczed8v6","slide":6,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":6,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/je9cvixc","slide":6,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":6,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/25kb6xkf","slide":6,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":6,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":6,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/re1w7mp0","slide":6,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/2t83itgf","slide":6,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/9knih4by","slide":6,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":6,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":6,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":6,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/cj6tovah","slide":6,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/54zidony","slide":6,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/udg7adsj","slide":6,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":6,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/cvixczed","slide":6,"text":"USE CASES","textPreview":"USE CASES","textChars":9,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":6,"text":"For teams building agents into real workflows.","textPreview":"For teams building agents into real workflows.","textChars":46,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":6,"text":"MyndMemory fits wherever an AI system needs persistent context, evolving preferences, and transparent recall.","textPreview":"MyndMemory fits wherever an AI system needs persistent context, evolving preferences, and transparent recall.","textChars":109,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":6,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/1orytsvu","slide":6,"bbox":[700,155,15,15]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":6,"text":"Personal copilots","textPreview":"Personal copilots","textChars":17,"textLines":1,"bbox":[736,146,440,30]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":6,"text":"Remember goals, preferences, active projects, and past decisions.","textPreview":"Remember goals, preferences, active projects, and past decisions.","textChars":65,"textLines":1,"bbox":[736,180,440,42]}
+{"kind":"shape","id":"sh/z61032ls","slide":6,"bbox":[700,233,15,15]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":6,"text":"Support and success agents","textPreview":"Support and success agents","textChars":26,"textLines":1,"bbox":[736,224,440,30]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":6,"text":"Carry account context across tickets, calls, and product events.","textPreview":"Carry account context across tickets, calls, and product events.","textChars":64,"textLines":1,"bbox":[736,258,440,42]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":6,"bbox":[700,311,15,15]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":6,"text":"Developer agents","textPreview":"Developer agents","textChars":16,"textLines":1,"bbox":[736,302,440,30]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":6,"text":"Retain project architecture, repo decisions, bugs, and review history.","textPreview":"Retain project architecture, repo decisions, bugs, and review history.","textChars":70,"textLines":1,"bbox":[736,336,440,42]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":6,"bbox":[700,389,15,15]}
+{"kind":"textbox","id":"sh/obm58z25","slide":6,"text":"Ops agents","textPreview":"Ops agents","textChars":10,"textLines":1,"bbox":[736,380,440,30]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":6,"text":"Track incidents, playbooks, ownership, and repeated operational patterns.","textPreview":"Track incidents, playbooks, ownership, and repeated operational patterns.","textChars":73,"textLines":1,"bbox":[736,414,440,42]}
+{"kind":"notes","id":"nt/4kchnz","slide":6,"text":""}
+{"kind":"slide","id":"sl/3ia7pj","slide":7,"title":"MyndMemory","textShapes":12}
+{"kind":"shape","id":"sh/g3ex0nux","slide":7,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/nih4byhg","slide":7,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/yxobm58z","slide":7,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/9cvixcze","slide":7,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":7,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/r65wjudg","slide":7,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":7,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/90je9cvi","slide":7,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":7,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/65wjudg7","slide":7,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/zqtcj6to","slide":7,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/obm58z25","slide":7,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":7,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":7,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":7,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/oza1gvy9","slide":7,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/hk3q5o7q","slide":7,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/al87ed8b","slide":7,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/z61032ls","slide":7,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":7,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/ixczed8v","slide":7,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/tovahoza","slide":7,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/032lszqt","slide":7,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/bulwval8","slide":7,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":7,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":7,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/0fepkzup","slide":7,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/byhgn29g","slide":7,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/idonyd0z","slide":7,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":7,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/lwval87e","slide":7,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":7,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":7,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":7,"text":"WHY NOW","textPreview":"WHY NOW","textChars":7,"textLines":1,"bbox":[72,132,470,28]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":7,"text":"The next agent platform needs memory as a product surface.","textPreview":"The next agent platform needs memory as a product surface.","textChars":58,"textLines":1,"bbox":[72,182,560,198]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":7,"text":"As agents move from chat windows into applications, memory becomes infrastructure, UX, governance, and differentiation.","textPreview":"As agents move from chat windows into applications, memory becomes infrastructure, UX, governance, and differentiation.","textChars":119,"textLines":1,"bbox":[74,424,510,112]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":7,"text":"MyndMemory pitch deck","textPreview":"MyndMemory pitch deck","textChars":21,"textLines":1,"bbox":[72,672,260,22]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1165,668,42,24]}
+{"kind":"shape","id":"sh/lkjm1cfa","slide":7,"bbox":[720,189,15,15]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":7,"text":"Framework, not one-off glue","textPreview":"Framework, not one-off glue","textChars":27,"textLines":1,"bbox":[756,180,420,30]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":7,"text":"A reusable memory runtime instead of bespoke prompt and retrieval code per app.","textPreview":"A reusable memory runtime instead of bespoke prompt and retrieval code per app.","textChars":79,"textLines":1,"bbox":[756,214,420,42]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":7,"bbox":[720,267,15,15]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":7,"text":"Inspectable by design","textPreview":"Inspectable by design","textChars":21,"textLines":1,"bbox":[756,258,420,30]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":7,"text":"Teams can see what the agent learned, why it recalled it, and how policies affected output.","textPreview":"Teams can see what the agent learned, why it recalled it, and how policies affected output.","textChars":91,"textLines":1,"bbox":[756,292,420,42]}
+{"kind":"shape","id":"sh/ovahoza1","slide":7,"bbox":[720,345,15,15]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":7,"text":"Built for adaptive behavior","textPreview":"Built for adaptive behavior","textChars":27,"textLines":1,"bbox":[756,336,420,30]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":7,"text":"Memory can be strengthened, decayed, corrected, merged, or scoped across identities.","textPreview":"Memory can be strengthened, decayed, corrected, merged, or scoped across identities.","textChars":84,"textLines":1,"bbox":[756,370,420,42]}
+{"kind":"notes","id":"nt/3ia7pj","slide":7,"text":""}
+{"kind":"slide","id":"sl/gp34nd","slide":8,"title":"MyndMemory","textShapes":6}
+{"kind":"shape","id":"sh/orytsvu9","slide":8,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/z61032ls","slide":8,"bbox":[0,0,1,720]}
+{"kind":"shape","id":"sh/al87ed8b","slide":8,"bbox":[92,0,1,720]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":8,"bbox":[184,0,1,720]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":8,"bbox":[276,0,1,720]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":8,"bbox":[368,0,1,720]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":8,"bbox":[460,0,1,720]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":8,"bbox":[552,0,1,720]}
+{"kind":"shape","id":"sh/obm58z25","slide":8,"bbox":[644,0,1,720]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":8,"bbox":[736,0,1,720]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":8,"bbox":[828,0,1,720]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":8,"bbox":[920,0,1,720]}
+{"kind":"shape","id":"sh/psfil0rq","slide":8,"bbox":[1012,0,1,720]}
+{"kind":"shape","id":"sh/epkzupwb","slide":8,"bbox":[1104,0,1,720]}
+{"kind":"shape","id":"sh/7adsji5s","slide":8,"bbox":[1196,0,1,720]}
+{"kind":"shape","id":"sh/wval87ed","slide":8,"bbox":[0,0,1280,1]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":8,"bbox":[0,92,1280,1]}
+{"kind":"shape","id":"sh/eloj2t83","slide":8,"bbox":[0,184,1280,1]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":8,"bbox":[0,276,1280,1]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":8,"bbox":[0,368,1280,1]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":8,"bbox":[0,460,1280,1]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":8,"bbox":[0,552,1280,1]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":8,"bbox":[0,644,1280,1]}
+{"kind":"shape","id":"sh/z61032ls","slide":8,"bbox":[72,54,12,12]}
+{"kind":"shape","id":"sh/al87ed8b","slide":8,"bbox":[91,54,12,12]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":8,"bbox":[110,54,12,12]}
+{"kind":"shape","id":"sh/orytsvu9","slide":8,"bbox":[72,73,12,12]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":8,"bbox":[91,73,12,12]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":8,"bbox":[110,73,12,12]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":8,"bbox":[72,92,12,12]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":8,"bbox":[91,92,12,12]}
+{"kind":"shape","id":"sh/yxobm58z","slide":8,"bbox":[110,92,12,12]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":8,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[146,51,220,28]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":8,"text":"THE ASK","textPreview":"THE ASK","textChars":7,"textLines":1,"bbox":[72,132,260,28]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":8,"text":"Help us turn agent memory into an interface builders can trust.","textPreview":"Help us turn agent memory into an interface builders can trust.","textChars":63,"textLines":1,"bbox":[72,188,720,176]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":8,"text":"Next milestones: ship the Studio workflow, harden HydraDB adapters, publish the developer framework, and onboard pilot builders.","textPreview":"Next milestones: ship the Studio workflow, harden HydraDB adapters, publish the developer framework, and onboard pilot builders.","textChars":128,"textLines":1,"bbox":[74,390,650,84]}
+{"kind":"shape","id":"sh/r65wjudg","slide":8,"bbox":[820,170,260,260]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":8,"bbox":[865,215,170,170]}
+{"kind":"shape","id":"sh/90je9cvi","slide":8,"bbox":[938,288,44,44]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":8,"text":"MyndMemory","textPreview":"MyndMemory","textChars":10,"textLines":1,"bbox":[820,480,260,38]}
+{"kind":"textbox","id":"sh/svu9knih","slide":8,"text":"Memory prompting for adaptive agents","textPreview":"Memory prompting for adaptive agents","textChars":36,"textLines":1,"bbox":[760,526,380,28]}
+{"kind":"notes","id":"nt/gp34nd","slide":8,"text":""}

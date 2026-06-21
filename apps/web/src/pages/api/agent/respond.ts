@@ -56,7 +56,7 @@ export const POST: APIRoute = async (context) => {
     return json(
       {
         provider: "local",
-        model: "deterministic-simulator",
+        model: "local-fallback",
         text: fallbackResponse,
         usedModel: false,
         reason:

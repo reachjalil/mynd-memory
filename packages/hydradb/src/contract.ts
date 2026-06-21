@@ -109,21 +109,21 @@ export const buildProfileKnowledgeSources = (
       id: `profile_${idPart(profile.id)}_demo_script`,
       tenant_id: config.tenantId,
       sub_tenant_id: subTenantId,
-      title: `${profile.name} MyndMemory demo script`,
-      type: "myndmemory_demo_script",
+      title: `${profile.name} MyndMemory walkthrough`,
+      type: "myndmemory_walkthrough",
       content: {
         text: [
-          "Demo path: ask the Brand-New Agent what to focus on for the hackathon demo.",
-          "Switch to the One-Month Agent and ask the same question.",
+          "Ask the Blank-Slate Agent a question to see a no-memory baseline answer.",
+          "Switch to a memory-rich agent and ask the same question.",
           "Show retrieved memories, newly encoded memories, state changes, and consolidation events.",
           "Advance simulated time, run consolidation, then adjust parameters and ask again.",
-          "The judge should see the agent is not starting from zero.",
+          "The point: the agent is not starting from zero - it remembers and adapts.",
         ].join("\n"),
       },
       metadata: {
         ...baseMetadata,
-        source_kind: "demo_script",
-        theme: "hackathon-demo",
+        source_kind: "walkthrough",
+        theme: "walkthrough",
       },
       additional_metadata: {
         source: "seeded-demo-script",
@@ -138,7 +138,7 @@ export const buildMemoryItem = (memory: AgentMemory) => ({
   title: `${memory.theme}: ${memory.type}`,
   text: memory.content,
   infer: false,
-  user_name: "MyndMemory demo user",
+  user_name: "MyndMemory agent",
   metadata: {
     agent_id: memory.agentId,
     memory_type: memory.type,
@@ -212,7 +212,7 @@ export const queryOptionsFromParameters = (
   queryForcefulRelations: true,
   queryApps: true,
   additionalContext:
-    "MyndMemory demo: retrieve shared demo knowledge and profile-scoped user memories without broadening tenant or sub-tenant scope.",
+    "MyndMemory: retrieve shared knowledge and profile-scoped user memories without broadening tenant or sub-tenant scope.",
 });
 
 /**

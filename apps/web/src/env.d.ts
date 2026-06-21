@@ -20,6 +20,9 @@ type MyndMemoryCloudflareEnv = {
   MYND_MEMORY_OPENAI_MODEL?: string;
   MYND_MEMORY_GEMINI_MODEL?: string;
   MYND_MEMORY_MAX_OUTPUT_TOKENS?: string;
+  // Optional HTTPS endpoint that MCP + skills waitlist signups are forwarded to
+  // (Zapier/Make catch hook, Formspree, Buttondown, a custom worker, ...).
+  WAITLIST_WEBHOOK_URL?: string;
 };
 
 type Runtime = import("@astrojs/cloudflare").Runtime<MyndMemoryCloudflareEnv>;
